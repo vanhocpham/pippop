@@ -6,6 +6,11 @@
 	<title>Love</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://www.jqueryscript.net/demo/Simple-Falling-Snow-Effect-with-jQuery-CSS3-let-it-snow/let-it-snow.css"
+		rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script
+		src="https://www.jqueryscript.net/demo/Simple-Falling-Snow-Effect-with-jQuery-CSS3-let-it-snow/let-it-snow.min.js"></script>
 	<iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 	<audio id="player" controls autoplay loop>
 		<source src="./mp3/audio.mp3" type="audio/mp3">
@@ -13,23 +18,43 @@
 </head>
 
 <body>
-	<div class="box">
-		<ul class="minbox">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-		<ol class="maxbox">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ol>
+	<div class="let-it-snow">
+		<div class="box">
+			<ul class="minbox">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ol class="maxbox">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
 	</div>
 </body>
+<script>
+	$.letItSnow('.let-it-snow', {
+		stickyFlakes: 'lis-flake--js',
+		makeFlakes: true,
+		sticky: true
+	});
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-36251023-1']);
+	_gaq.push(['_setDomainName', 'jqueryscript.net']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
 </html>

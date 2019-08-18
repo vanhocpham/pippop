@@ -1,6 +1,7 @@
 *{
   margin:0;
   padding:0;
+  cursor: url(https://i.ibb.co/mz9rDX4/star.png), auto;
 }
 body{
   background: url(../img/background.jpg) 0 0 no-repeat; background-size: 100%;
